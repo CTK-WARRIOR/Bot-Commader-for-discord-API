@@ -1,0 +1,297 @@
+{
+  "keywords": [
+    {
+      "id": 1,
+      "name": "$name",
+      "description": "This mentions the user who sent the message. NOTE: If you use it in the channel send part of an event where the user leaves you will receive an invalid user mention.",
+      "condition": "Compatible with all except member leave and member ban"
+    },
+    {
+      "id": 2,
+      "name": "$channel",
+      "description": "Adds the channel name to the message.",
+      "condition": "Compatible with Message Received"
+    },
+    {
+      "id": 3,
+      "name": "$server",
+      "description": "This gives you the name of the server in which message is sent.",
+      "condition": "Not compatible with Private Message Received"
+    },
+
+    {
+      "id": 4,
+      "name": "$message",
+      "description": "This adds the message content of the message sent.",
+      "condition": "Compatible with Message Received and Private Message Received"
+    },
+
+    {
+      "id": 5,
+      "name": "$rollnum(min, max)",
+      "description": "This generates a random number where you replace min with the smallest number and max with the largest one. For example, if you made a dice command that uses $rollnum(1,6) it would show replace where you put the $rollnum(1,6) with the result. If your command was to reply with '$rollnum(1,6) is the roll of your dice.'",
+      "condition": "Compatible with all"
+    },
+
+    {
+      "id": 6,
+      "name": "$date",
+      "description": "This gives your current date.",
+      "condition": "Compatible with all"
+    },
+
+    {
+      "id": 7,
+      "name": "$avatar",
+      "description": "The current avatar of the user who called the command.",
+      "condition": "Compatible with all except member leave and member ban"
+    },
+    {
+      "id": 8,
+      "name": "$defaultAvatar",
+      "description": "The default avatar of the user.",
+      "condition": "Compatible with all except member leave and member ban"
+    },
+    {
+      "id": 9,
+      "name": "$memberCount",
+      "description": "Gives the number of members currently in the server.",
+      "condition": "Not compatible with pm recieved"
+    },
+    {
+      "id": 10,
+      "name": "$serverCreateTime",
+      "description": "Gives the time the server was created.",
+      "condition": "Not compatible with pm recieved"
+    },
+    {
+      "id": 11,
+      "name": "$messageAfterCommand",
+      "description": "gives all raw message content after command.",
+      "condition": "Compatible with Message Received and Private Message Received"
+    },
+    {
+      "id": 12,
+      "name": "$commandCount",
+      "description": "gives the number of commands bot has.",
+      "condition": "None"
+    },
+    {
+      "id": 13,
+      "name": "$namePlain",
+      "description": "name of user who called command without mention.",
+      "condition": "None"
+    },
+    {
+      "id": 14,
+      "name": "$serverIcon",
+      "description": "Gives the icon of the server",
+      "condition": "Not compatible with pm recieved"
+    },
+    {
+      "id": 15,
+      "name": "$serverBanner",
+      "description": "Gives the banner of ther server if there is available one.",
+      "condition": "Not compatible with pm recieved"
+    },
+    {
+      "id": 16,
+      "name": "$serverDescription",
+      "description": "Gives the description of the server, if it exists.",
+      "condition": "Not compatible with pm recieved"
+    },
+    {
+      "id": 17,
+      "name": "$serverSplash",
+      "description": "Gives the splash of the server, if it exists.",
+      "condition": "Not compatible with pm recieved"
+    },
+    {
+      "id": 18,
+      "name": "$botAvatar",
+      "description": "Gives the avatar of the bot.",
+      "condition": "None"
+    },
+    {
+      "id": 19,
+      "name": "$botName",
+      "description": "Name of the bot",
+      "condition": "None"
+    },
+    {
+      "id": 20,
+      "name": "$mentionedAvatar",
+      "description": "Gives you the avatar of the mentioned member.",
+      "condition": "Only message recieved"
+    },
+    {
+      "id": 21,
+      "name": "$mentionedName",
+      "description": "name of mentioned user in a mention",
+      "condition": "Only message recieved"
+    },
+    {
+      "id": 22,
+      "name": "$mentionedNamePlain",
+      "description": "name of a mentioned user in plain format",
+      "condition": "Only message recieved"
+    },
+    {
+      "id": 23,
+      "name": "$random{}",
+      "description": "Used to select a random message or link for embed images. Used like $random{abc|def|ghi} where | is the seperator between choices to be picked.",
+      "condition": "None"
+    },
+    {
+      "id": 24,
+      "name": "$discriminator",
+      "description": "discriminator of command caller.",
+      "condition": "None"
+    },
+    {
+      "id": 25,
+      "name": "$tag",
+      "description": "tag of command caller",
+      "condition": "None"
+    },
+    {
+      "id": 26,
+      "name": "$timeCreated",
+      "description": "Account creation time of command caller.",
+      "condition": "None"
+    },
+    {
+      "id": 27,
+      "name": "$ID",
+      "description": "ID of command caller.",
+      "condition": "None"
+    },
+    {
+      "id": 28,
+      "name": "$serversSharedWithBot",
+      "description": "Number of servers shared with command caller.",
+      "condition": "None"
+    },
+    {
+      "id": 29,
+      "name": "$channelID",
+      "description": "ID of channel where message is sent.",
+      "condition": "Only message recieved or react add"
+    },
+    {
+      "id": 30,
+      "name": "$channelCreateDate",
+      "description": "Only message recieved or react add",
+      "condition": "Date of the creation of the channel."
+    },
+    {
+      "id": 31,
+      "name": "$channelAsMention",
+      "description": "Mention of channel",
+      "condition": "Only message recieved or react add"
+    },
+    {
+      "id": 32,
+      "name": "$botDiscriminator",
+      "description": "Discriminator of the bot",
+      "condition": "None"
+    },
+    {
+      "id": 33,
+      "name": "$botTag",
+      "description": "Tag of bot",
+      "condition": "None"
+    }, 
+     {
+      "id": 34,
+      "name": "$botDefaultAvatar",
+      "description": "Default avatar of bot",
+      "condition": "None"
+    },  {
+      "id": 35,
+      "name": "$botTimeCreated",
+      "description": "Creation time of bot",
+      "condition": "None"
+    },  {
+      "id": 36,
+      "name": "$botID",
+      "description": "ID of bot",
+      "condition": "None"
+    },  {
+      "id": 37,
+      "name": "$ping",
+      "description": "Ping to gateway",
+      "condition": "None"
+    },  {
+      "id": 38,
+      "name": "$inviteURL",
+      "description": "URL to invite the bot",
+      "condition": "None"
+    },  {
+      "id": 39,
+      "name": "$serverCount",
+      "description": "Amount of servers bot is In.",
+      "condition": "None"
+    },  {
+      "id": 41,
+      "name": "$allMemberCount",
+      "description": "Amount of users in all servers the bot is in.",
+      "condition": "None"
+    }, {
+      "id": 42,
+      "name": "$mentionedDiscriminator",
+      "description": "Discriminator of mentioned user.",
+      "condition": "Only message recieved"
+    }, {
+      "id": 43,
+      "name": "$mentionedTag",
+      "description": "Tag of mentioned user.",
+      "condition": "Only message recieved"
+    }, {
+      "id": 44,
+      "name": "$mentionedIsBot",
+      "description": "Checks the mentioned user is bot or not.",
+      "condition": "Only message recieved"
+    }, {
+      "id": 45,
+      "name": "$mentionedDefaultAvatar",
+      "description": "Default avatar of mentioned user.",
+      "condition": "Only message recieved"
+    }, {
+      "id": 46,
+      "name": "$mentionedTimeCreated",
+      "description": "Account creation date of mentioned user",
+      "condition": "Only message recieved"
+    }, {
+      "id": 47,
+      "name": "$mentionedID",
+      "description": "ID of mentioned user.",
+      "condition": "Only message recieved"
+    }, {
+      "id": 48,
+      "name": "$mentionedServersSharedWithBot",
+      "description": "How many servers the mentioned user shares with the bot.",
+      "condition": "Only message recieved"
+    }, {
+      "id": 49,
+      "name": "$eval",
+      "description": "Used to mark the start of a block of javascript code.",
+      "condition": "None"
+    }, {
+      "id": 50,
+      "name": "$halt",
+      "description": "Must be used after done writing javascript section of command to mark the end of the code.",
+      "condition": "None"
+    }, {
+      "id": 51,
+      "name": "$get(var)",
+      "description": "Used to get variables created by either in javascript block or $set()",
+      "condition": "None"
+    }, {
+      "id": 52,
+      "name": "$set(var,value)",
+      "description": "Used to set values. Types include numbers, strings, and boolean(true or false).",
+      "condition": "None"
+    }
+  ]
+}
